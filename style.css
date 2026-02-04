@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+input{
+    display: none;
+}
+.recipe{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    
+}
+img{
+    width: 50%;
+    object-fit: cover;
+}
+.food1{
+    width: 500px;
+}
+.food2{
+    width: 500px;
+}
+.content{
+    width: 50%;
+    padding: 30px;
+    position: relative;
+}
+h1{
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+.meta{
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.alpha{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+h3 {
+color: #bf360c;
+margin-top: 20px;
+font-size: 40px;
+}
+ul, ol {
+padding-left: 20px;
+}
+li{
+    margin: 5px;
+    font-size: 30px;
+}
+.veg{
+    display: none;
+}
+#toggle:checked ~ .nonveg{
+    display: none;
+}
+#toggle:checked ~ .veg{
+    display: flex;
+}
+
+.btn {
+position: absolute;
+ bottom: 20px;
+right: 0px;
+padding: 10px 30px;
+border-radius: 20px;
+color: white;
+cursor: pointer;
+font-size: 28px;
+}
+.veg-btn {
+background: #2e7d32;
+}
+.nonveg-btn {
+background: #c62828;
+}
